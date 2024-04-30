@@ -28,10 +28,6 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
                 {
                     Console.Write(celdas[i]);
                 }*/
-                while ()
-                {
-
-                }
 
             }
             catch (Exception e)
