@@ -9,22 +9,25 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
     internal class FicheroImplementacion : FicheroInterfaz
     {
         /// <summary>
-        /// Metodo que creara el fichero log
+        /// Metodo que creara el fichero log y añadira datos
         /// awb
         /// </summary>
-        public void ficheroLogCreacion()
+        public void ficheroLog(string accion)
         {
             try
             {
-            DateTime ahora = DateTime.Now;
-            StreamWriter swlog = new StreamWriter($"C:\\Users\\Adrian\\source\\repos\\awanuerExamenCuartaEvaluacion\\awanuerExamenCuartaEvaluacion\\log-{ahora.ToString("ddMMyyyy")}.txt");
+                DateTime ahora = DateTime.Now;
+                string path = ($"C:\\Users\\Adrian\\source\\repos\\awanuerExamenCuartaEvaluacion\\awanuerExamenCuartaEvaluacion\\log-{ahora.ToString("ddMMyyyy")}.txt");
+                StreamWriter swlog = new StreamWriter(path);
 
-            }catch( Exception e )
+                swlog.WriteLine(accion);
+                swlog.Close();
+            }
+            catch (Exception e)
             {
                 throw;
             }
         }
-
         /// <summary>
         /// Metodo que leera el fichero de las citas
         /// awb

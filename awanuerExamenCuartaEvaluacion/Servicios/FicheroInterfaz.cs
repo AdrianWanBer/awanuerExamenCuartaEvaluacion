@@ -12,7 +12,13 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
         /// Metodo que creara el fichero log
         /// awb
         /// </summary>
-        public void ficheroLogCreacion();
+        public void ficheroLog(string accion);
+
+        /// <summary>
+        /// Metodo que se encarga de escribir y crear el fichero log
+        /// </summary>
+        /// <param name="accion"></param>
+        public void añadirDatosLog(string accion);
 
         /// <summary>
         /// Metodo que leera el fiechero que contendra los datos para las listas
