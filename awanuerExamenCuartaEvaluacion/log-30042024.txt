@@ -1,7 +1,2 @@
 Se abre la acplicacion
-Se abre el Listado de consultas
-Volver
-Se abre el Registro de llegada
-Se abre el Listado de consultas
-Volver
-Se cierra la acplicacion
+Se cierra la aplicacion
