@@ -9,12 +9,6 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
     internal interface FicheroInterfaz
     {
         /// <summary>
-        /// Metodo que creara el fichero log y escribira sobre el
-        /// awb
-        /// </summary>
-        public void ficheroLog(string accion);
-
-        /// <summary>
         /// Metodo que leera el fiechero que contendra los datos para las listas
         /// awb
         /// </summary>
