@@ -1,9 +1,4 @@
 ﻿using awanuerExamenCuartaEvaluacion.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace awanuerExamenCuartaEvaluacion.Servicios
 {
@@ -21,11 +16,9 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
         /// <param name="listaCitas"></param>
         public void registroDeLLegada(List<CitasDtos> listaCitas)
         {
-            
+
             try
             {
-
-
                 bool dniValidado = false;
                 while (!dniValidado)
                 {
@@ -70,7 +63,7 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
             }
             catch (Exception e)
             {
-                
+
             }
         }
 
@@ -139,7 +132,8 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
                     default:
                         break;
                 }
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
 
             }
@@ -213,8 +207,6 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
             {
                 throw;
             }
-
-            
         }
     }
 }
