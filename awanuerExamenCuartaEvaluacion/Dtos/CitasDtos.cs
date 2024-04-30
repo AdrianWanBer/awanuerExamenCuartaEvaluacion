@@ -5,6 +5,9 @@
     /// </summary>
     internal class CitasDtos
     {
+        /// <summary>
+        /// Datos del Dto
+        /// </summary>
         public string dni = "99999";
         public string nombre = "aaaaa";
         public string apellidos = "aaaaa";
