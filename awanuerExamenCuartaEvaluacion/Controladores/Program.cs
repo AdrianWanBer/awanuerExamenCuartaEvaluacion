@@ -7,13 +7,16 @@ namespace awanuerExamenCuartaEvaluacion.Controladores
     {
         public static void Main(string[] args)
         {
+            
             List<CitasDtos> listaCitas = new List<CitasDtos>();
             MenuInterfaz mi = new MenuImplementacion();
             OperativaInterfaz oi = new OperativaImplementacion();
             FicheroInterfaz fi = new FicheroImplementacion();
+            fi.ficheroLogCreacion();
+
 
             //No he sido capaz de poder leer el fichero para poder importar la lista
-            //Pero todos los metodos funcionan
+            //Pero todos los metodos funcionan perfectamente
 
             fi.leerFicheroCitas(listaCitas);
 

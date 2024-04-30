@@ -14,8 +14,15 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
         /// </summary>
         public void ficheroLogCreacion()
         {
+            try
+            {
             DateTime ahora = DateTime.Now;
-            StreamWriter swlog = new StreamWriter($"log-{ahora.ToString("ddMMyyyy")}.txt");
+            StreamWriter swlog = new StreamWriter($"C:\\Users\\Adrian\\source\\repos\\awanuerExamenCuartaEvaluacion\\awanuerExamenCuartaEvaluacion\\log-{ahora.ToString("ddMMyyyy")}.txt");
+
+            }catch( Exception e )
+            {
+                throw;
+            }
         }
 
         /// <summary>
