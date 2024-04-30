@@ -27,15 +27,15 @@ namespace awanuerExamenCuartaEvaluacion.Controladores
                 switch (seleccion)
                 {
                     case 0: //Cierra la aplicacion
-                        fi.añadirDatosLog("Se cierra la aplicación");
+                        fi.ficheroLog("Se cierra la aplicación");
                         cerrarMenu = true;
                         break;
                     case 1: //Registro de llegada
-                        fi.añadirDatosLog("Se abre Registo de llegada");
+                        fi.ficheroLog("Se abre Registo de llegada");
                         oi.registroDeLLegada(listaCitas);
                         break;
                     case 2: //Listado de consultas
-                        fi.añadirDatosLog("Se abre Listado de consultas");
+                        fi.ficheroLog("Se abre Listado de consultas");
                         int seleccionConsultas = mi.menuConsultas();
                         switch (seleccionConsultas)
                         {

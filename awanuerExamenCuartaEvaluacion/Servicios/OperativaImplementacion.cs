@@ -37,6 +37,7 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
 
                     if (letras[num] == dniLetra.ToUpper())
                     {
+                        Console.WriteLine("Dni validado");
                         dniValidado = true;
                         string dniCompleto = $"{dniNumeros}{dniLetra}";
                         foreach (CitasDtos cita in listaCitas)
@@ -57,6 +58,10 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
                                 }
                             }
                         }
+                    }
+                    else
+                    {
+                        Console.WriteLine("El dni es incorrecto, ");
                     }
 
                 }
@@ -168,6 +173,7 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
                                     ", Hora: ", cita.fechaConsulta.ToString("hh:mm")));
                             }
                         }
+                        sw.Close();
                         break;
                     case 2: //Traumatología
                         DateTime ahora2 = DateTime.Now;
@@ -183,6 +189,7 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
                                     ", Hora: ", cita.fechaConsulta.ToString("hh:mm")));
                             }
                         }
+                        sw2.Close();
                         break;
                     case 3: //Fisioterapia
                         DateTime ahora3 = DateTime.Now;
@@ -198,6 +205,7 @@ namespace awanuerExamenCuartaEvaluacion.Servicios
                                     ", Hora: ", cita.fechaConsulta.ToString("hh:mm")));
                             }
                         }
+                        sw3.Close();
                         break;
                     default:
                         break;
